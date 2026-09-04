@@ -1,0 +1,642 @@
+{
+  "app/Console/Commands/CheckStaleTrips.php": {
+    "mtime": 1786356129.026774,
+    "ast_hash": "03bf5b6bf02997bcc824b4d9879db326",
+    "semantic_hash": ""
+  },
+  "app/DTOs/CreateTripData.php": {
+    "mtime": 1785275956.316611,
+    "ast_hash": "7a860029249a274c917ff8d211c80f0e",
+    "semantic_hash": ""
+  },
+  "app/DTOs/LogCheckpointData.php": {
+    "mtime": 1785248583.4275973,
+    "ast_hash": "d0ee12c016a3f435c29eb9727d7b49a7",
+    "semantic_hash": ""
+  },
+  "app/Enums/CheckpointSource.php": {
+    "mtime": 1785248555.8071089,
+    "ast_hash": "df7f6eda6ca3750399f2072461a9b647",
+    "semantic_hash": ""
+  },
+  "app/Enums/DelayReason.php": {
+    "mtime": 1785248555.8081036,
+    "ast_hash": "bac71017b2840bc0df992763aa7b0899",
+    "semantic_hash": ""
+  },
+  "app/Enums/OrgType.php": {
+    "mtime": 1785248554.3073428,
+    "ast_hash": "501ff2f9584cf0811e7d65e436cf3927",
+    "semantic_hash": ""
+  },
+  "app/Enums/PingSource.php": {
+    "mtime": 1785248556.7027025,
+    "ast_hash": "89fb5a95ef5ec811c566e93cd90c9bce",
+    "semantic_hash": ""
+  },
+  "app/Enums/TripStatus.php": {
+    "mtime": 1785248555.1630094,
+    "ast_hash": "2341340ba5be237ea352eb81adaf5db9",
+    "semantic_hash": ""
+  },
+  "app/Events/TripArrived.php": {
+    "mtime": 1785248559.5489666,
+    "ast_hash": "39fc8849508230c69ac12e0a668f4506",
+    "semantic_hash": ""
+  },
+  "app/Events/TripCreated.php": {
+    "mtime": 1785248559.0913515,
+    "ast_hash": "39ddeb46960e3790e4e0e55c1a424072",
+    "semantic_hash": ""
+  },
+  "app/Events/TripDelayed.php": {
+    "mtime": 1786355905.1207564,
+    "ast_hash": "6d20fc603d14ddfe408eb920119d36b0",
+    "semantic_hash": ""
+  },
+  "app/Exceptions/Domain/InvalidGeofenceException.php": {
+    "mtime": 1785248558.1272166,
+    "ast_hash": "86654fd9d78328801182852e8b560a83",
+    "semantic_hash": ""
+  },
+  "app/Exceptions/Domain/TripNotFoundException.php": {
+    "mtime": 1785248557.3360233,
+    "ast_hash": "63ec864f67a5ad3e684bf1d54ef8f2de",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Auth/SessionController.php": {
+    "mtime": 1785275717.7392268,
+    "ast_hash": "0d1d806284ad8e2f8c87e83636d5b6f6",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Controller.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/DashboardController.php": {
+    "mtime": 1786394523.062779,
+    "ast_hash": "4bfe3ee3e5e83793471d34c580119740",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/TripController.php": {
+    "mtime": 1786355675.1015816,
+    "ast_hash": "1b3758c66c8ce8654f85fd87a9454151",
+    "semantic_hash": ""
+  },
+  "app/Http/Middleware/HandleInertiaRequests.php": {
+    "mtime": 1785255090.985095,
+    "ast_hash": "59d60c5a18ac67b13d1542f398473b6e",
+    "semantic_hash": ""
+  },
+  "app/Http/Requests/CreateTripRequest.php": {
+    "mtime": 1785275909.3654482,
+    "ast_hash": "0e3051c94971c20cd408f6741d0dd49c",
+    "semantic_hash": ""
+  },
+  "app/Http/Requests/LogCheckpointRequest.php": {
+    "mtime": 1785275913.9770143,
+    "ast_hash": "18baddcd048996469190562a9f15d5ac",
+    "semantic_hash": ""
+  },
+  "app/Models/CheckpointEvent.php": {
+    "mtime": 1785248576.5608222,
+    "ast_hash": "84b71d95da6066c6f979f4f02135784f",
+    "semantic_hash": ""
+  },
+  "app/Models/ClientOrg.php": {
+    "mtime": 1785248569.374515,
+    "ast_hash": "b5fd7eedc47a7a69f6ce61c21eeeb8a7",
+    "semantic_hash": ""
+  },
+  "app/Models/Corridor.php": {
+    "mtime": 1785248568.059089,
+    "ast_hash": "9c1c547093b85400ffa4e5c2fc636f22",
+    "semantic_hash": ""
+  },
+  "app/Models/DispatcherUser.php": {
+    "mtime": 1785275699.2273526,
+    "ast_hash": "168912b8cb5d2b158842477895d1e862",
+    "semantic_hash": ""
+  },
+  "app/Models/Driver.php": {
+    "mtime": 1785248573.792825,
+    "ast_hash": "8bfe7e5571c83e252f1b4185ac8e6c19",
+    "semantic_hash": ""
+  },
+  "app/Models/LocationPing.php": {
+    "mtime": 1785248577.5153782,
+    "ast_hash": "649d46257dc5d228ed073450428f9236",
+    "semantic_hash": ""
+  },
+  "app/Models/Trip.php": {
+    "mtime": 1785248575.2512856,
+    "ast_hash": "a2a68e9b8d241e4b7ca260200650bf77",
+    "semantic_hash": ""
+  },
+  "app/Models/User.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "ca00ef9e587df52eeb3f687855f5c234",
+    "semantic_hash": ""
+  },
+  "app/Models/Vehicle.php": {
+    "mtime": 1785248571.8148232,
+    "ast_hash": "43724f077aa781e89b9f84887448d93d",
+    "semantic_hash": ""
+  },
+  "app/Providers/AppServiceProvider.php": {
+    "mtime": 1785275626.8656402,
+    "ast_hash": "6c3eb8af66b7b881405c2245b4cd5a3d",
+    "semantic_hash": ""
+  },
+  "app/Services/Contracts/GeofenceServiceInterface.php": {
+    "mtime": 1786355949.296434,
+    "ast_hash": "8fdc5847a07e2a53a10a104c1e34389b",
+    "semantic_hash": ""
+  },
+  "app/Services/Contracts/TripServiceInterface.php": {
+    "mtime": 1786394505.5275,
+    "ast_hash": "ffd766c6b3c08dbcf1fa0a5e83ea44b6",
+    "semantic_hash": ""
+  },
+  "app/Services/GeofenceService.php": {
+    "mtime": 1786356041.2173822,
+    "ast_hash": "6139ad321d8959f2b48765ffdf10fa2c",
+    "semantic_hash": ""
+  },
+  "app/Services/TripService.php": {
+    "mtime": 1786394514.8724523,
+    "ast_hash": "77c074626cce974d074c07389ddedee2",
+    "semantic_hash": ""
+  },
+  "artisan": {
+    "mtime": 1779721912.0,
+    "ast_hash": "e66bb13691f6184c762c196427d8e685",
+    "semantic_hash": ""
+  },
+  "bootstrap/app.php": {
+    "mtime": 1786394652.5287225,
+    "ast_hash": "a62179e74573fb06dba8eda6bb67572c",
+    "semantic_hash": ""
+  },
+  "bootstrap/providers.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "888c810b5a4720916f07aa05dd2c2dd3",
+    "semantic_hash": ""
+  },
+  "composer.json": {
+    "mtime": 1785254461.9733162,
+    "ast_hash": "8c6559667d03317aa0ae88056b010a25",
+    "semantic_hash": ""
+  },
+  "config/app.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "276578ad68424be59d0998379ae7d4cb",
+    "semantic_hash": ""
+  },
+  "config/auth.php": {
+    "mtime": 1785275712.797022,
+    "ast_hash": "d361f298866d530c7aef8ce617a6f931",
+    "semantic_hash": ""
+  },
+  "config/cache.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "399c7a3b4bca7e3cb9b622828682ab56",
+    "semantic_hash": ""
+  },
+  "config/database.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "594a01554ab7583541a8fb05a69f935f",
+    "semantic_hash": ""
+  },
+  "config/filesystems.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "bde1aa1027f0448f17348dbd93f3d7ea",
+    "semantic_hash": ""
+  },
+  "config/logging.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "d8255a5c07d3da72c7c9363f0c44bddd",
+    "semantic_hash": ""
+  },
+  "config/mail.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "18601a927b48d38337ba2077426a7d60",
+    "semantic_hash": ""
+  },
+  "config/queue.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a",
+    "semantic_hash": ""
+  },
+  "config/services.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "534a1b7af7009c373ea4ebfa18823d57",
+    "semantic_hash": ""
+  },
+  "config/session.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "5ea7169252ec3cc7fad471f5cd0d7678",
+    "semantic_hash": ""
+  },
+  "database/factories/UserFactory.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "1c9f381f9c2bc3027971a3bfdbe99164",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000001_create_corridors_table.php": {
+    "mtime": 1785251892.8843143,
+    "ast_hash": "4e1d6770bdc99286544ec079d38c677a",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000002_create_client_orgs_table.php": {
+    "mtime": 1785275336.6589072,
+    "ast_hash": "05458737d7d1dbb9af2359d77ea8d39c",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000003_create_dispatcher_users_table.php": {
+    "mtime": 1785248606.7412045,
+    "ast_hash": "81ceb4f0b83f8a920567b2b83a37c874",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000004_create_vehicles_table.php": {
+    "mtime": 1785248606.742182,
+    "ast_hash": "60c04754d3d4d6d739599d1f442481bc",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000005_create_drivers_table.php": {
+    "mtime": 1785248606.9416008,
+    "ast_hash": "8af4e2b02a798c411a506e3d3b3addc2",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000006_create_trips_table.php": {
+    "mtime": 1785275381.4255917,
+    "ast_hash": "ac1c1187f9571f76f32e9d6e52bca233",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000007_create_checkpoint_events_table.php": {
+    "mtime": 1785275424.7400737,
+    "ast_hash": "977995cd7497141ee16b31cb25324cd8",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000008_create_location_pings_table.php": {
+    "mtime": 1785275451.8266754,
+    "ast_hash": "42b750710d4a28bbeecf18362e17926d",
+    "semantic_hash": ""
+  },
+  "database/migrations/2024_01_01_000009_add_auth_columns_to_dispatcher_users.php": {
+    "mtime": 1785275682.4990342,
+    "ast_hash": "382a7e5851932df831e55870b9972c85",
+    "semantic_hash": ""
+  },
+  "database/seeders/DatabaseSeeder.php": {
+    "mtime": 1785256531.4511185,
+    "ast_hash": "79d07d1bc5014d5d1cf6ae25ca69a32f",
+    "semantic_hash": ""
+  },
+  "database/seeders/TradeCorridorSeeder.php": {
+    "mtime": 1785275849.6835754,
+    "ast_hash": "b391d2224c970fcf424545e7e182d783",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1785255344.7805507,
+    "ast_hash": "69bacfe52ec1901fbaa2a66ef3ec6715",
+    "semantic_hash": ""
+  },
+  "public/index.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "d8eda274115af5fd2aaa8230af329ef7",
+    "semantic_hash": ""
+  },
+  "resources/js/Layouts/DashboardLayout.jsx": {
+    "mtime": 1785275822.532467,
+    "ast_hash": "32c6bb18df75ea916529df13d898b08a",
+    "semantic_hash": ""
+  },
+  "resources/js/Pages/Dashboard.jsx": {
+    "mtime": 1786394532.7336092,
+    "ast_hash": "919fde7ffe405d4078c8381a42b216d9",
+    "semantic_hash": ""
+  },
+  "resources/js/Pages/Login.jsx": {
+    "mtime": 1785275779.1689942,
+    "ast_hash": "c26b43c0d3fdbb3a54fb8216e57d105b",
+    "semantic_hash": ""
+  },
+  "resources/js/Pages/TripDetail.jsx": {
+    "mtime": 1786355791.9890926,
+    "ast_hash": "de3372e6c09fe8e2f8e7f18cd23e5fe3",
+    "semantic_hash": ""
+  },
+  "resources/js/app.js": {
+    "mtime": 1779721912.0,
+    "ast_hash": "b519d08ef66fd54910edbedba6181ec2",
+    "semantic_hash": ""
+  },
+  "resources/js/app.jsx": {
+    "mtime": 1785275796.194945,
+    "ast_hash": "34204e30bf1f07380b41c3802aa77702",
+    "semantic_hash": ""
+  },
+  "resources/views/app.blade.php": {
+    "mtime": 1785255058.3816774,
+    "ast_hash": "7a748dac0cffe3a23f8f7a7b1b39ec35",
+    "semantic_hash": ""
+  },
+  "resources/views/welcome.blade.php": {
+    "mtime": 1785256007.3318264,
+    "ast_hash": "9f30b79f261817c56e7d3ddb7622821d",
+    "semantic_hash": ""
+  },
+  "routes/console.php": {
+    "mtime": 1786356147.3464322,
+    "ast_hash": "c12a71dbd627412ff59b7e061448d9ea",
+    "semantic_hash": ""
+  },
+  "routes/web.php": {
+    "mtime": 1786355632.4176235,
+    "ast_hash": "612c5142dcac19aeb1676027470acbf0",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/07ba2e58908c5d4c3a19cced59470a87.php": {
+    "mtime": 1785379413.2149968,
+    "ast_hash": "bc177f621e9079e316f4d52080538718",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/0aaeea61fc732f47a43ab6b83c3f1dcd.php": {
+    "mtime": 1785379401.9967895,
+    "ast_hash": "a46dd3afa053cfc25bac86ee05a38ee9",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/0d3734eb5bd32e7e7a337cedd7776c4e.php": {
+    "mtime": 1785379406.4268498,
+    "ast_hash": "85d70ad71d38de0576cb25819fd33f12",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/0d7974d22e7670d065008100b08427ad.php": {
+    "mtime": 1785379414.458556,
+    "ast_hash": "d9d83e2ce78abdb660123ddf5f269b97",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/158c980cc55f19be2f4895829b36b203.php": {
+    "mtime": 1785379406.160727,
+    "ast_hash": "7640cdecd6c92392d884d3bd95457011",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/266a23e6e32d25c44d32204e05731481.php": {
+    "mtime": 1786357139.6912262,
+    "ast_hash": "4a600c896ca9e402b732d2110e74fc1e",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/2ef26e18bf420b5ef3e4da620cf109f3.php": {
+    "mtime": 1785379404.3094654,
+    "ast_hash": "3abe09271ce61e5ba2842989d1cd0b77",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/30c0a2bdd35744a547164a858c6bf5dc.php": {
+    "mtime": 1785379392.0058842,
+    "ast_hash": "4588d46ae29a9182b4b6fb776beda0ed",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/3543221d533e3f0175754f4f4ead0bd6.php": {
+    "mtime": 1785379403.2155142,
+    "ast_hash": "4621082ebe003fc65289ce13dd44e4d1",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/35ab47c2b7d5d5d1c0b3e76efda9b1ca.php": {
+    "mtime": 1785379413.533477,
+    "ast_hash": "b9766ab39fa4b8841592f5178f5d1920",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/3bdfd3a02afea8ff5382828609258057.php": {
+    "mtime": 1786357139.3582203,
+    "ast_hash": "238377c624f0a01e52597592b27cf07f",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/46d9250c4c89cb4bd231522d8c617b6e.php": {
+    "mtime": 1785379409.9501097,
+    "ast_hash": "76bbac14ed3499dcc6c0ade2a2d37110",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/495e1218523fe5c48fb36db20365fea1.php": {
+    "mtime": 1785379398.1815932,
+    "ast_hash": "4ad36fda99899c71b6dde75132356da4",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/4b64caf21ace8234eabf9de6bfaac85b.php": {
+    "mtime": 1785379406.0421114,
+    "ast_hash": "4dbea9768585ac25f9666e39342baef5",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/4c093f55b8f13add51bb214c63be0ef7.php": {
+    "mtime": 1785379400.7851932,
+    "ast_hash": "4b42bc5ca7e96829e689a7686bc303da",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/5b4273d91626f2e54906ba0d8d50675c.php": {
+    "mtime": 1785379406.3336935,
+    "ast_hash": "ecd8eefdc1e7766ce4f895bf7683a049",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/5be8b6ba9313cb09dad160111c21eb08.php": {
+    "mtime": 1785379407.7710745,
+    "ast_hash": "210c7e676f9f05b79bfea67dd110849f",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/80815cff438d5975de72e376ec148c1f.php": {
+    "mtime": 1785379413.956746,
+    "ast_hash": "d3b15703fc7c017f39c9a6c4122f5944",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/81d6302a16e1b149c6d5a7f57a904fd1.php": {
+    "mtime": 1785379407.1594944,
+    "ast_hash": "47b38c203b16e38218f6ef918c7ba6d8",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/831e6c919d4dbd5c98f63ab01248c8a7.php": {
+    "mtime": 1785379415.7691684,
+    "ast_hash": "b91f1c0434499e1808430365dbe21f4f",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/8a5a10c9cbc199ef3ad006f3ae831178.php": {
+    "mtime": 1785379406.266713,
+    "ast_hash": "58694487a3694ac44607408d89cfe86e",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/9d2cb64ec8e4f19f2534d944612e720f.php": {
+    "mtime": 1785379400.9574955,
+    "ast_hash": "2f0579a2c888323d24687da9f26682b7",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/a0142ec933237bb5e8620fe3a725784c.php": {
+    "mtime": 1785379413.447511,
+    "ast_hash": "89d446bfa78d4e5b590383039cf90d58",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/a0257ed7ae19b31e33a68d8979da4613.php": {
+    "mtime": 1785379398.5941877,
+    "ast_hash": "6b97383674592dc07d3e948fd1812bdf",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/a321aad338c73b203d9e7cc4ef0562bb.php": {
+    "mtime": 1785379413.2879746,
+    "ast_hash": "a7b31c49438d4eb990bce2eaf0d7f8ad",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/aa0a8dc18b8d72c58deb7935751e596e.php": {
+    "mtime": 1785379408.493384,
+    "ast_hash": "4a1980e380fb986a30dfddffc6548e5f",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/aebf79cbafec8186196fce765d5ad10c.php": {
+    "mtime": 1785379398.2485545,
+    "ast_hash": "a2c854383216235c09cf6bf98b0306de",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/b395203b2cb1c935d2926d439c7316a1.php": {
+    "mtime": 1785379397.088445,
+    "ast_hash": "96ead5d26f4cb35e02e3a7659f4105fe",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/b8b68045cb93b5430c7aae12f7189065.php": {
+    "mtime": 1785379414.681713,
+    "ast_hash": "a6ab52b9636a733d77aa4dbf17acf034",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/d62e23a1f77b1b2f88e5f19b1bbf6f24.php": {
+    "mtime": 1785262046.5578725,
+    "ast_hash": "d1d5957b9449e4b45ee8f217a460244a",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/d9fc12922708551ab51c4a966bb15ed4.php": {
+    "mtime": 1785379398.0876236,
+    "ast_hash": "027bfcad996e5a14895e29093ac2f2e7",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/dbc69d0f9916e6928c002bdb6a946869.php": {
+    "mtime": 1785379398.3963068,
+    "ast_hash": "ee936ec94246fd664fb10802df0240a5",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/e472dedef2d1e5651915602918b6f9eb.php": {
+    "mtime": 1785379413.7024949,
+    "ast_hash": "57f50abbdaf96a7bbcc7c9571fa48fd7",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/ee4915f5a1c4090a9740b287a1da779f.php": {
+    "mtime": 1785379400.668058,
+    "ast_hash": "6cc0c821b4309412377483ee8856fc55",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/ef3d757f1ce604e34d6d53df7947793d.php": {
+    "mtime": 1785379410.2340748,
+    "ast_hash": "7a4d1e0fd5225a4803b83d446ac17b12",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/f13749c9873256b105ec229e5c49e88d.php": {
+    "mtime": 1785379400.36674,
+    "ast_hash": "c03dc4405b460fa0e36fa199d8f6767d",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/f6e46a1e34c2000499f94411e482d213.php": {
+    "mtime": 1785379413.6024175,
+    "ast_hash": "96b20a37d9fec35e4c32ab418b782709",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/f7afc91c05710bb422151830da97bc24.php": {
+    "mtime": 1785379415.1804216,
+    "ast_hash": "e1603ef9ba4b63058a397f7f56449951",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/f7cc3a0d694a32b3629bb98e87b980e0.php": {
+    "mtime": 1785379384.2235906,
+    "ast_hash": "be965f39dd1d648e03df33e8c87e5e9a",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/f90d735add29be530ca00a201fc15560.php": {
+    "mtime": 1785379403.0915878,
+    "ast_hash": "246adf0a83a173a0411cabca9825f743",
+    "semantic_hash": ""
+  },
+  "tests/Feature/SessionControllerTest.php": {
+    "mtime": 1785373137.8931003,
+    "ast_hash": "db6c6ccb0d6c4931cfb6df58335eb10a",
+    "semantic_hash": ""
+  },
+  "tests/Feature/TripControllerTest.php": {
+    "mtime": 1786394571.7372785,
+    "ast_hash": "6a07b8edcebbe32a77ff001540dfb86e",
+    "semantic_hash": ""
+  },
+  "tests/TestCase.php": {
+    "mtime": 1779721912.0,
+    "ast_hash": "7e567dc27e68d5b57bae16af07f68907",
+    "semantic_hash": ""
+  },
+  "tests/Unit/GeofenceServiceTest.php": {
+    "mtime": 1786356389.7505062,
+    "ast_hash": "d75fe7941ff385a074ffaafbcb06e3ec",
+    "semantic_hash": ""
+  },
+  "tests/Unit/TripServiceTest.php": {
+    "mtime": 1786394565.780519,
+    "ast_hash": "c6192f2b14d2aa7b2c97c1d86328ed1b",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1785255057.4156268,
+    "ast_hash": "a9018fa94ae989473e1a2a107d8c235b",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1779721912.0,
+    "ast_hash": "d2661a31fed7f254f5b7d3b6fe19330a",
+    "semantic_hash": ""
+  },
+  "Service_Layer_Conventions.md": {
+    "mtime": 1785229900.6335223,
+    "ast_hash": "3031621e40e6ad787fa951956f1c990a",
+    "semantic_hash": ""
+  },
+  "TradeCorridor_MVP_Build_Plan.md": {
+    "mtime": 1785228525.9200122,
+    "ast_hash": "55eb83a079f0d40ffc1f18058ec00c26",
+    "semantic_hash": ""
+  },
+  "errors.md": {
+    "mtime": 1786394385.1848855,
+    "ast_hash": "c6e3f55608e52deac05861e627355d36",
+    "semantic_hash": ""
+  },
+  "p0.txt": {
+    "mtime": 1785787971.2208536,
+    "ast_hash": "e9aa0422e5abb7159a971b59301de9ce",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1779721912.0,
+    "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "semantic_hash": ""
+  },
+  "app/Exceptions/Domain/DriverHasActiveTripException.php": {
+    "mtime": 1786394482.3494387,
+    "ast_hash": "b515c405d8e786498239ce213df0faba",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/5e6337517df594f353f5447a3e72119b.php": {
+    "mtime": 1786359794.2675076,
+    "ast_hash": "45cc55bb7ad2b34fd1beeacf8b193b6d",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/b59d9b6165b8d497607d42aa82f0022e.php": {
+    "mtime": 1786394272.3514566,
+    "ast_hash": "46b9dd1ccd4c97f144b55b4d88f694c0",
+    "semantic_hash": ""
+  },
+  "storage/framework/views/d3a21c39f565b3db35e31741e3774ea5.php": {
+    "mtime": 1786394275.699526,
+    "ast_hash": "af6c789cc4e621623e06b2d750f63efb",
+    "semantic_hash": ""
+  }
+}
